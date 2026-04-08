@@ -164,7 +164,7 @@
     .faq-icon { width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid var(--border-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem; font-weight: 300; color: var(--ink-muted); transition: all 0.3s var(--ease); line-height: 1; }
     .faq-item.open .faq-icon { background: var(--accent); border-color: var(--accent); color: white; transform: rotate(45deg); }
     .faq-a { max-height: 0; overflow: hidden; padding: 0 28px; color: var(--ink-muted); line-height: 1.78; font-size: 0.97rem; transition: max-height 0.4s var(--ease), padding 0.3s ease; }
-    .faq-item.open .faq-a { max-height: 400px; padding: 2px 28px 24px; }
+    .faq-item.open .faq-a { max-height: 800px; padding: 2px 28px 24px; }
     .interview-item { background: var(--surface); border-radius: var(--r-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-xs); transition: border-color 0.25s ease, box-shadow 0.25s ease; }
     .interview-item:hover { border-color: var(--border-dark); box-shadow: var(--shadow-sm); }
     .interview-item.open { border-color: var(--accent-warm); box-shadow: 0 4px 16px rgba(196,131,42,0.12); }
@@ -924,6 +924,8 @@
             <div class="skill-tags">
               <span class="skill-tag">Advanced Prompt Engineering</span>
               <span class="skill-tag">Custom LLM Workflows</span>
+              <span class="skill-tag">Claude</span>
+              <span class="skill-tag">Google Labs</span>
               <span class="skill-tag">Gemini Pro</span>
               <span class="skill-tag">NotebookLM</span>
               <span class="skill-tag">GitHub Copilot</span>
@@ -931,7 +933,6 @@
               <span class="skill-tag">VBA / Macro Automation</span>
               <span class="skill-tag">Zapier</span>
               <span class="skill-tag">SensiwiseAI</span>
-              <span class="skill-tag">Granola</span>
             </div>
           </div>
           <div>
@@ -942,7 +943,7 @@
               <span class="skill-tag">Azure Cloud</span>
               <span class="skill-tag">SAP SD / BW</span>
               <span class="skill-tag">Financial Planning Architecture</span>
-              <span class="skill-tag">Next Best Offer Algorithms</span>
+              <span class="skill-tag">Power Pivot</span>
               <span class="skill-tag">MS Office (Expert)</span>
             </div>
           </div>
@@ -951,7 +952,7 @@
             <div class="skill-tags">
               <span class="skill-tag">C-Level Storytelling</span>
               <span class="skill-tag">Budget &amp; P&amp;L Ownership</span>
-              <span class="skill-tag">Team Leadership (7+ reports)</span>
+              <span class="skill-tag">Team Leadership (6+ reports)</span>
               <span class="skill-tag">Corporate Venturing</span>
               <span class="skill-tag">Business Case Design</span>
               <span class="skill-tag">Stakeholder Management</span>
@@ -1034,11 +1035,11 @@
           </div>
           <div class="faq-item">
             <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What is your AI and technology stack?<span class="faq-icon">+</span></button>
-            <div class="faq-a">I work daily with a broad range of generative AI tools &mdash; including leading LLMs, Gemini Pro, NotebookLM, Cursor, GitHub Copilot, and Zapier for automation. On the data side, I have deep experience with PowerBI, Azure Cloud, Tableau, and SAP. I am a strong believer in choosing the right tool for the job and staying ahead of the curve &mdash; my LinkedIn feed has documented this learning journey for over 12 months.</div>
+            <div class="faq-a">I work daily with a broad range of generative AI tools - including leading LLMs, Gemini Pro, NotebookLM, Cursor, GitHub Copilot, and Zapier for automation. On the data side, I have experience with PowerBI, Azure Cloud, Tableau, and SAP. I am a strong believer in choosing the right tool for the job and staying ahead of the curve - my LinkedIn feed has documented this learning journey for over 18 months.</div>
           </div>
           <div class="faq-item">
             <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">How do you approach team enablement and coaching?<span class="faq-icon">+</span></button>
-            <div class="faq-a">I believe adoption happens peer-to-peer, not top-down. I have facilitated AI workshops for colleagues at Blue Incite, run informal 1:1 AI coaching sessions, and established a weekly best-practice sharing routine in my current team. My approach is to meet people where they are and demonstrate value through practical, immediately applicable use cases &mdash; not abstract theory.</div>
+            <div class="faq-a">I believe adoption happens peer-to-peer, not top-down. My approach is to meet people where they are and demonstrate value through practical, immediately applicable use cases, not abstract theory.<br><br>I have facilitated AI workshops for colleagues at Blue Incite, run informal 1:1 coaching sessions, and established a weekly best-practice sharing routine. Through these formats, I&rsquo;ve helped my colleagues move past basic chat interfaces to actual workflow integration. I&rsquo;ve coached them on structuring better prompts with context files in Allianz GPT &amp; Claude, and helped them set up custom agents.<br><br>As a result, we&rsquo;ve transformed how the team works across several domains: automated contract creation, implemented AI-driven quality checks on SQL code, generated stronger workshop concepts, and even streamlined audit documentation. It proves that when you make enablement practical and peer-driven, people naturally embrace the technology.</div>
           </div>
         </div>
         <div class="qanda-divider">
@@ -1048,24 +1049,24 @@
         </div>
         <div class="qanda-list">
           <div class="interview-item">
-            <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">Why transition from Controlling to AI Adoption?<span class="interview-icon">+</span></button>
-            <div class="interview-a">My job has always been to make Allianz faster, smarter, and more profitable. Two years ago, I realised that standard controlling tools were hitting a ceiling. Generative AI was the ultimate efficiency lever. I didn&rsquo;t pivot away from strategy &mdash; I upgraded my toolset to include LLMs, custom automation, and prompt engineering. The transition isn&rsquo;t a departure; it&rsquo;s the natural next step of the same mission: driving enterprise efficiency and making complex things simple for decision-makers.</div>
+            <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">How does a CFO and Sales Controller end up driving AI adoption?<span class="interview-icon">+</span></button>
+            <div class="interview-a">It wasn&rsquo;t really a planned career pivot; it was just the natural next step. My job has always been to simplify complex business models so the management can make quick decisions. For years, the best tools for that were Tableau and Excel. But two years ago, I hit a ceiling with what traditional tools could do. Upgrading my toolset to include LLMs, prompt engineering, and custom automation wasn&rsquo;t a departure from strategy, but a massive upgrade. I&rsquo;m moving into AI adoption full-time because I want to take this intrapreneurial mindset I&rsquo;ve built in my own departments and scale that relief and efficiency across the entire group.</div>
           </div>
           <div class="interview-item">
             <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">Do you have enough technical depth for this role?<span class="interview-icon">+</span></button>
-            <div class="interview-a">I work with leading LLMs, Gemini Pro, Cursor, GitHub Copilot, and Zapier on a daily basis &mdash; not as experiments, but as core workflow tools. I have engineered VBA automations via LLMs, built financial reporting stacks on Azure and PowerBI, hired and managed developers to build custom full-stack tools, and published over 30 LinkedIn posts documenting practical AI use cases. My depth is demonstrated through consistent, public output &mdash; not just credentials.</div>
+            <div class="interview-a">I work with leading LLMs, Gemini Pro, Cursor, GitHub Copilot, and Zapier on a daily basis - not as experiments, but as core workflow tools. I have engineered VBA automations via LLMs, built financial reporting stacks on Azure and PowerBI, hired and managed developers to build custom full-stack tools, and published over 30 LinkedIn posts documenting practical AI use cases. My depth is demonstrated through consistent, public output - not just credentials.</div>
           </div>
           <div class="interview-item">
             <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">What is your insider advantage over an external AI hire?<span class="interview-icon">+</span></button>
-            <div class="interview-a">You can hire brilliant external prompt engineers, but they will hit a brick wall when they try to explain the ROI to an Allianz Vorstand. I speak both languages. I know how to spin up automations, and I know exactly what metrics the board needs to see to approve a group-wide rollout. I understand the internal political landscape, the compliance guardrails, and the stakeholder dynamics that determine whether a pilot actually scales &mdash; or dies in a PowerPoint.</div>
+            <div class="interview-a">An external consultant can build a brilliant tool, but enterprise AI adoption fails if you don&rsquo;t have buy-in from both the management and the frontline teams. I know how to fight on both fronts. I understand the compliance guardrails and ROI metrics the board needs to approve a rollout.<br><br>But more importantly, I know our culture and how to actually coach our employees to embrace these new workflows. I speak both the language of the technology and the reality of our teams. Thus, I don&rsquo;t just spin up automations - I empower the people using them. That is the difference between a pilot that scales into a daily habit, and one that dies in a PowerPoint.</div>
           </div>
           <div class="interview-item">
-            <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">Can you give a concrete example of an AI workflow you have built?<span class="interview-icon">+</span></button>
-            <div class="interview-a">When ChatGPT launched, I immediately used it to generate complex Excel VBA macros and PowerPoint templates that had previously taken days of manual work. I then introduced a weekly &ldquo;AI Best Practice&rdquo; routine in my team of seven, where each member shared a concrete use case. Beyond my day job, I designed and built this portfolio CV using AI-assisted development tools, created AI-powered workshop formats for Blue Incite colleagues, and run informal 1:1 coaching sessions to help peers integrate AI into their daily workflows.</div>
+            <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">What is the most impactful AI-driven solution you have built recently?<span class="interview-icon">+</span></button>
+            <div class="interview-a">Recently, I partnered with our CCO and Brand Marketing team to build an interactive marketing spend simulator for the Executive Board. First, I utilized AI deep research to synthesize tier-1 sources on complex correlations - like Excess Share of Voice (ESOV) vs. performance, brand equity, and CAC.<br><br>I then used Claude to program a fully interactive HTML application from scratch. To ensure it was &ldquo;board-ready,&rdquo; I designed it with one-click pre-built scenarios and an executive summary tab, allowing stakeholders to immediately see the financial impact of different allocations. I also programmed dynamic context windows that expose the &ldquo;live&rdquo; formulas, explaining the underlying math as the board adjusts parameters.<br><br>Beyond executive tooling, I am highly focused on grassroots adoption. I regularly use LLMs to engineer complex VBA macros that eliminate days of manual reporting, and I instituted a mandatory weekly &ldquo;AI Best Practice&rdquo; routine for my team to drive everyday AI fluency.</div>
           </div>
           <div class="interview-item">
             <button class="interview-q" aria-expanded="false" onclick="toggleInterview(this)">How would you drive adoption among sceptical colleagues?<span class="interview-icon">+</span></button>
-            <div class="interview-a">Scepticism is usually rooted in one of three things: fear of replacement, lack of visible relevance, or bad first experiences with AI tools. My approach is to start with their actual pain points &mdash; not the technology. I ask: &ldquo;What takes you the longest every week?&rdquo; Then I show them a 5-minute win using AI on that exact task. Once someone sees their own work getting easier, the resistance dissolves. I have done this dozens of times in 1:1 settings, and it works far better than any town-hall presentation.</div>
+            <div class="interview-a">Scepticism is usually rooted in one of three things: fear of replacement, lack of visible relevance, or bad first experiences with AI tools. My approach is to start with their actual pain points - not the technology. I ask: &ldquo;What takes you the longest every week?&rdquo; Then I show them a 5-minute win using AI on that exact task. Once someone sees their own work getting easier, the resistance dissolves. I have done this dozens of times in 1:1 settings, and it works far better than any town-hall presentation.</div>
           </div>
         </div>
       </div>
@@ -1203,15 +1204,15 @@
       <div class="pcv-section-title">Skills &amp; Tools</div>
       <div class="pcv-skill-row">
         <span class="pcv-skill-cat">AI &amp; Automation</span>
-        <span class="pcv-skill-list">Advanced Prompt Engineering &middot; Custom LLM Workflows &middot; Gemini Pro &middot; NotebookLM &middot; GitHub Copilot &middot; Cursor &middot; VBA / Macro Automation &middot; Zapier &middot; SensiwiseAI &middot; Granola</span>
+        <span class="pcv-skill-list">Advanced Prompt Engineering &middot; Custom LLM Workflows &middot; Claude &middot; Google Labs &middot; Gemini Pro &middot; NotebookLM &middot; GitHub Copilot &middot; Cursor &middot; VBA / Macro Automation &middot; Zapier &middot; SensiwiseAI</span>
       </div>
       <div class="pcv-skill-row">
         <span class="pcv-skill-cat">Data &amp; Analytics</span>
-        <span class="pcv-skill-list">PowerBI &middot; Tableau &middot; Azure Cloud &middot; SAP SD / BW &middot; Financial Planning Architecture &middot; Next Best Offer Algorithms &middot; MS Office (Expert)</span>
+        <span class="pcv-skill-list">PowerBI &middot; Tableau &middot; Azure Cloud &middot; SAP SD / BW &middot; Financial Planning Architecture &middot; Power Pivot &middot; MS Office (Expert)</span>
       </div>
       <div class="pcv-skill-row">
         <span class="pcv-skill-cat">Leadership</span>
-        <span class="pcv-skill-list">C-Level Storytelling &middot; Budget &amp; P&amp;L Ownership &middot; Team Leadership (7+ direct reports) &middot; Corporate Venturing &middot; Business Case Design &middot; AI Coaching &amp; Enablement</span>
+        <span class="pcv-skill-list">C-Level Storytelling &middot; Budget &amp; P&amp;L Ownership &middot; Team Leadership (6+ direct reports) &middot; Corporate Venturing &middot; Business Case Design &middot; AI Coaching &amp; Enablement</span>
       </div>
       <div class="pcv-skill-row">
         <span class="pcv-skill-cat">Languages</span>
